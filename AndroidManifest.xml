@@ -8,6 +8,9 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="15" />
 
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -57,6 +60,54 @@
         <activity
             android:name="in.nammaapp.itskannada.PhraseSearchActivity"
             android:label="@string/title_activity_phrase_search" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.RequestPhraseTranslateActivity"
+            android:label="@string/title_activity_request_phrase_translate" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.SearchForumActivity"
+            android:label="@string/title_activity_search_forum" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.LearningModuleActivity"
+            android:label="@string/title_activity_learning_module" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.DictSearchActivity"
+            android:label="@string/title_activity_dict_search" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.QuestionActivity"
+            android:label="@string/title_activity_question" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.ForumActivity"
+            android:label="@string/title_activity_forum" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.PhraseActivity"
+            android:label="@string/title_activity_phrase_request" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.WordContextResActivity"
+            android:label="@string/title_activity_word_context_res" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.NotificationsActivity"
+            android:label="@string/title_activity_notifications" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.PointsActivity"
+            android:label="@string/title_activity_points" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.PronunciationActivity"
+            android:label="@string/title_activity_pronunciation" >
+        </activity>
+        <activity
+            android:name="in.nammaapp.itskannada.EvalActivity"
+            android:label="@string/title_activity_eval" >
         </activity>
     </application>
 

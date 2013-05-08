@@ -1,16 +1,162 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".KannadaHomeActivity" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:stretchColumns="1" >
 
+        <TableRow
+            android:id="@+id/tableRow011"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Help..."
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />        
+        </TableRow>
+            
+        <TableRow
+            android:id="@+id/tableRow19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnResPhrase"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Translate Kannada Phrases"
+                android:textSize="10sp" />
+            
+            <Button
+                android:id="@+id/btnPrnWord"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pronunce a Word"
+                android:textSize="12sp" />
+            
+                        
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <Button
+                android:id="@+id/btnResWord"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contextify Kannada"
+                android:textSize="12sp" />
+            
+            
+            <Button
+                android:id="@+id/btnAnsQuestion"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Answer a Question"
+                android:textSize="12sp" />
+            
+            
+            
+        </TableRow>
+		<TableRow
+            android:id="@+id/tableRow021"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnEval"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Evaluate Contributions..."
+                android:textSize="?android:attr/textAppearanceMedium" />
+            
+        </TableRow>
+        
+        
+        
+         <TableRow
+            android:id="@+id/tableRow02w"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView5wq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kannada Forum..."
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+            
+        <TableRow
+            android:id="@+id/tableRow3m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnKanQuestion"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ask a Question"
+                android:textSize="12sp" />
+            
+            
+            <Button
+                android:id="@+id/btnkanForum"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Go to Forum"
+                android:textSize="12sp" />
+        </TableRow>
+
+        
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnKanNotif"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Notifications - 0"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnKanBadge"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Points and Badges"
+        android:textSize="10sp" />
+    
 </RelativeLayout>

@@ -42,14 +42,14 @@
     </EditText>
 
     <EditText
-        android:id="@+id/EditText01"
+        android:id="@+id/edtUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/TextView01"
         android:ems="10"
-        android:hint="Firstname      Lastname"
-        android:inputType="textPersonName" />
+        android:hint="Lower case letters and numerals"
+        android:inputType="text" />
 
     <TextView
         android:id="@+id/TextView01"
@@ -57,7 +57,72 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/edtName"
         android:layout_below="@+id/edtName"
-        android:text="username:"
+        android:text="USERNAME:"
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtUsername"
+        android:layout_below="@+id/edtUsername"
+        android:text="PASSWORD:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:ems="10"
+        android:hint="Minimum of 6 characters"
+        android:inputType="textWebPassword" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtPassword"
+        android:layout_below="@+id/edtPassword"
+        android:text="EMAIL:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_below="@+id/TextView03"
+        android:ems="10"
+        android:hint="Valid Email Address"
+        android:inputType="textWebEmailAddress" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtEmail"
+        android:layout_below="@+id/edtEmail"
+        android:text="REGION:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/spnRegion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_below="@+id/TextView04"
+        android:entries="@array/region_arrays" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spnRegion"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:text="SUBMIT"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

@@ -24,4 +24,36 @@
     <string name="title_activity_dictionary_search">Dictionary Search</string>
     <string name="title_activity_phrase_search">Phrase Search</string>
 
+    <string-array name="region_arrays">
+        <item>Mysore</item>
+        <item>Hyderabad-Karnataka</item>
+        <item>Hubli-Dharwad-Gadag-Haveri</item>
+        <item>Belgaum</item>
+        <item>Karwar-North Canara</item>
+        <item>Mangalore-Udupi-South Canara</item>
+        <item>Kodagu</item>
+        <item>Kolar-Pavgada</item>
+        <item>Bangalore</item>
+        <item>Bellary</item>
+        <item>Davangere-Chitradurga</item>
+        <item>Bijapur-Bagalkot</item>
+        <item>Hassan-Chikmagaluru</item>
+        <item>Shivamogga</item>
+        <item>Mandya-Kanakapura-Magadi-Kunigal-Chamaraajanagar</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="title_activity_request_phrase_translate">Request Phrase Translate</string>
+    <string name="title_activity_search_forum">Search the Forum</string>
+    <string name="title_activity_learning_module">Learning Module</string>
+    <string name="title_activity_dict_search">Dictionary Search</string>
+    <string name="title_activity_question">Ask a Question</string>
+    <string name="title_activity_forum">Forum</string>
+    <string name="title_activity_phrase_request">Phrase Request...</string>
+    <string name="title_activity_word_context_res">Word + Context Resolution</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="title_activity_points">Points and Badges</string>
+    <string name="title_activity_pronunciation">Pronunciation</string>
+    <string name="title_activity_eval">Evaluator</string>
+
 </resources>

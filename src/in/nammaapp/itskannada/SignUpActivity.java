@@ -1,7 +1,9 @@
 package in.nammaapp.itskannada;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -24,7 +26,6 @@ public class SignUpActivity extends Activity {
 			public void onClick(View v) {
 				Intent i = new Intent(SignUpActivity.this, RegisterActivity.class);
 				startActivity(i);
-				i.
 			}
 		});
 		btnDict.setOnClickListener(new OnClickListener() {
@@ -42,18 +43,21 @@ public class SignUpActivity extends Activity {
 				Intent i = new Intent(SignUpActivity.this, PhraseSearchActivity.class);
 				startActivity(i);
 			}
-		});
-//		EditText usernae
-//		HttpClient hc = new DefaultHttpClient();
-//		HttpPost hp = new HttpPost(getResources().getString(R.string.homeURL) + "/scripts/signup.php");
-//		hp.setHeader("Connection", "keep-alive");
-//		hp.setHeader("Content-Type", "application/x-www-form-urlencoded");
-//		HttpResponse hr;
-//		ArrayList<NameValuePair> postparameters = new ArrayList<NameValuePair>();
-//		postparameters.add(new BasicNameValuePair("starttoken", "f45e8v23jk5x3p917q106npuwlh94v3zpige9d80"));
-//		postparameters.add(new BasicNameValuePair("username", value))
-//		
-		
+		});		
+	}
+	
+	@Override
+	public void onBackPressed() {
+		SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.appPrefFIle), Context.MODE_PRIVATE);
+		String prefcheck = pref.getString("kannada", "notSet");
+		if(prefcheck != "notSet") {
+			Intent intent = new Intent();
+			intent.setAction(Intent.ACTION_MAIN);
+			intent.addCategory(Intent.CATEGORY_HOME);
+			startActivity(intent);
+		} else {
+			super.onBackPressed();
+		}
 	}
 
 	@Override
