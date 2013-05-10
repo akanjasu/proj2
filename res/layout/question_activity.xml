@@ -8,9 +8,65 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".QuestionActivity" >
 
-    <TextView
+    <Spinner
+        android:id="@+id/regionspin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/quesetxt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="114dp" 
+        android:entries="@array/region_arrays"
+        />
+
+   
+
+    <Button
+        android:id="@+id/sbtques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:text="SUBMIT" />
+
+    <EditText
+        android:id="@+id/kan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/regionspin"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Kan Word" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kan"
+        android:text="Select Region:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/questxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eng"
+        android:layout_alignLeft="@+id/eng"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Type your question here"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kan"
+        android:layout_alignLeft="@+id/kan"
+        android:ems="10"
+        android:hint="English word" />
 
 </RelativeLayout>
